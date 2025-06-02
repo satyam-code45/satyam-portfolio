@@ -2,7 +2,8 @@
 
 A sleek, animated, and modern portfolio to showcase my full-stack development skills, tools, and availability for remote opportunities.
 
-![Portfolio Screenshot](portfolio.png)
+![image](https://github.com/user-attachments/assets/467c1ddf-2727-4b78-8d28-b303898ef829)
+
 
 ## ✨ Features
 
