@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import Card from './Card'
 import { Globe } from './Globe'
-import CopyEmail from './CopyEmail'
 import Tech from './Tech'
 import TopCard from './TopCard'
 
@@ -14,14 +13,10 @@ const About = () => {
             <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12'>
                 {/* Grid-1 */}
                 <div className='flex items-end grid-default-color grid-1'>
-                    {/* <img
-                        src='assets/coding-pov.png'
-                        className='absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:insert-y-10 lg:scale-[2.5]'
-                    /> */}
                     <Tech />
                     <div className='z-10'>
-                        <p className='headtext'>Hi, I'm Satyam</p>
-                        <p className='subtext'>
+                        <p className='headtext font-extrabold'>Hi, I'm Satyam</p>
+                        <p className='font-bold sm:font-normal bg-primary/20 sm:bg-none text-neutral-400 text-sm md:text-base text-pretty'>
                             Full-Stack Developer 👨‍💻 crafting code with care — exploring DevOps ⚙️, Web3 🔗, and Generative AI 🤖. Always building, always evolving.
                         </p>
                     </div>
@@ -33,14 +28,18 @@ const About = () => {
                         <p className='flex items-end text-5xl text-gray-500'>
                             Code. Debug. Repeat.
                         </p>
-                        <Card style={{rotate: "75deg", top:"30%", left:"20%"}} text={"Test"} containerRef={grid2ref}/>
-                        <Card style={{rotate: "30deg", top:"60%", left:"45%"}} text={"Hello"} containerRef={grid2ref}/>
-                        <Card style={{rotate: "-75deg", top:"60%", left:"0%"}} text={"Hii"} containerRef={grid2ref}/>
-                        <Card style={{rotate: "70deg", bottom:"30%", left:"70%"}} text={"Design"} containerRef={grid2ref}/>
-                        <Card  style={{rotate: "7deg", top:"10%", left:"50%"}}  text={"Lol"} containerRef={grid2ref}/>
-                        <Card style={{rotate: "30deg", top:"70%", left:"70%"}} image="assets/logos/csharp-pink.png" containerRef={grid2ref}/>
-                        <Card style={{rotate: "-45deg", top:"70%", left:"25%"}} image="assets/logos/dotnet-pink.png" containerRef={grid2ref}/>
-                        <Card style={{rotate: "-45deg", top:"5%", left:"10%"}} image="assets/logos/blazor-pink.png" containerRef={grid2ref}/>
+                        <Card style={{ rotate: "75deg", top: "30%", left: "20%" }} text={"Test"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "30deg", top: "60%", left: "45%" }} text={"Hello"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "-75deg", top: "60%", left: "0%" }} text={"Hii"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "70deg", bottom: "30%", left: "70%" }} text={"Design"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "7deg", top: "10%", left: "50%" }} text={"Lol"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "30deg", top: "70%", left: "70%" }} image="/assets/websitelogos/react.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "-45deg", top: "70%", left: "25%" }} image="/assets/websitelogos/nextjs1.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "-45deg", top: "5%", left: "10%" }} image="/assets/websitelogos/Node.js.png" containerRef={grid2ref} />
+
+                        <Card style={{ rotate: "40deg", top: "10%", left: "40%" }} image="/assets/websitelogos/typescript.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "-5deg", top: "50%", left: "35%" }} image="/assets/websitelogos/MongoDB.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "85deg", top: "15%", left: "80%" }} image="/assets/websitelogos/Docker.png" containerRef={grid2ref} />
                     </div>
                 </div>
                 {/* Grid-3 */}
@@ -55,21 +54,7 @@ const About = () => {
                         <Globe />
                     </figure>
                 </div>
-                {/* Grid-4 */}
-                {/* <div className='grid-special-color grid-4'>
-                    <div className='flex flex-col items-center justify-center gap-4 size-full'>
-                        <p className='text-center headtext'>
-                            Do you want to start a project together?
-                        </p>
-                        <CopyEmail/>
-                    </div>
-                </div> */}
-                {/* Grid-5 */}
-                {/* <div className='grid-default-color grid-5'>
-                    <div className='absolute insert-y-0 md:insert-y-9 w-full h-full start-[50%] md:scale-125'>
-                        <Tech />
-                    </div>
-                </div> */}
+    
             </div>
         </section>
     )

@@ -1,25 +1,57 @@
 import { useState } from "react"
-
+import emailjs from "@emailjs/browser"
+import { Loader2, SendHorizonal } from "lucide-react"
+import { toast } from "sonner"
 const Contact = () => {
 
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        message:""
+        message: ""
     })
 
-    const handleChange = (e) =>{
-        setFormData({...formData,[e.target.name]: e.target.value})
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
-    const handleSubmit = (e) =>{
+    const [isLoading, setisLoading] = useState(false)
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData);
-        
+        setisLoading(true);
+
+        try {
+            //service id service_t8nfw0x
+            //templateid template_pnuylr9
+            console.log("form data: ", formData);
+
+            await emailjs.send("service_t8nfw0x", "template_pnuylr9", {
+                from_name: formData.name,
+                to_name: "Satyam",
+                from_email: formData.email,
+                to_email: "satyam45.dev@gmail.com",
+                message: formData.message
+            },
+                "pJzBnOFkOdn2naIL9"
+            )
+            setFormData({
+                name: "",
+                email: "",
+                message: ""
+            })
+            setisLoading(false);
+            toast.success('Email has been sent!')
+        } catch (error) {
+            setisLoading(false)
+            console.log(error);
+            toast.error('Failed to send Email. Try again after sometime!')
+        }
+
+
     }
 
     return (
-        <section className="relative flex items-center c-space section-spacing">
+        <section className="relative flex items-center c-space mt-25 mb-20 sm:mt-0">
             <div
                 className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary"
             >
@@ -39,7 +71,7 @@ const Contact = () => {
                             Full Name
                             <span className="text-red-600">*</span>
                         </label>
-                        <input 
+                        <input
                             id="name"
                             name="name"
                             type="text"
@@ -56,7 +88,7 @@ const Contact = () => {
                             Email
                             <span className="text-red-600">*</span>
                         </label>
-                        <input 
+                        <input
                             id="email"
                             name="email"
                             type="text"
@@ -86,11 +118,22 @@ const Contact = () => {
                             value={formData.message}
                         />
                     </div>
-                    <button 
+                    <button
                         type="submit"
-                        className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+                        className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer 
+                        bg-gradient-to-r from-royal to-lavender text-white font-light 
+                        shadow-md hover:from-fuchsia hover:to-orange hover:shadow-lg 
+                        active:scale-95 transition-all duration-300"
                     >
-                        Send
+                        {isLoading ? (
+                            <div className="flex items-center justify-center gap-2">
+                                <Loader2 className="animate-spin" /> Sending
+                            </div>
+                        ) : (
+                            <div className="flex items-center justify-center gap-2">
+                                <span className="text-xl">Send</span> <SendHorizonal size={18} />
+                            </div>
+                        )}
                     </button>
                 </form>
             </div>

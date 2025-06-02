@@ -1,11 +1,9 @@
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
-import Hero from "./components/hero/Hero"
 import { DotPattern } from "./components/magicui/dot-pattern"
-import { Meteors } from "./components/magicui/meteors"
-import Navbar from "./components/navbar/Navbar"
 import Projects from "./components/Projects/Projects"
+import Skill from "./components/skills/Skill"
 import { cn } from "./lib/utils"
 
 const App = () => {
@@ -21,11 +19,9 @@ const App = () => {
           "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] ",
         )}
       />
-
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
       <About />
       <Projects />
+      <Skill />
       <Contact />
       <Footer />
     </div>

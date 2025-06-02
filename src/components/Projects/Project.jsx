@@ -2,7 +2,7 @@ import { useState } from "react"
 import { InteractiveHoverButton } from "../magicui/interactive-hover-button"
 import ProjectCard from "./ProjectCard"
 
-const Project = ({title, description, subDescription, href, image, tags,setPreview}) => {
+const Project = ({title, description, subDescription, live, github, image, tags,setPreview}) => {
 
     const [isHidden, setIsHidden] = useState(false)
 
@@ -29,7 +29,8 @@ const Project = ({title, description, subDescription, href, image, tags,setPrevi
 
             {isHidden && (<ProjectCard 
                 description={description}
-                href={href}
+                github={github}
+                live={live}
                 image={image}
                 subDescription={subDescription}
                 tags={tags}

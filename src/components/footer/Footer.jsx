@@ -2,23 +2,31 @@ import { mySocials } from "@/constants"
 
 const Footer = () => {
     return (
-        <secton className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
-            <div className="mb-4 bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-
-            <div className="flex items-center gap-2 text-sm text-neutral-500">
-                <span>&copy; 2025 Satyam. All rights reserved.</span>
+        <footer className="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10 pt-6 pb-4 c-space text-sm text-neutral-400">
+            {/* Copyright */}
+            <div className="text-center sm:text-left">
+                &copy; 2025 Satyam. All rights reserved.
             </div>
 
-            <div
-                className="flex gap-3"
-            >
+            {/* Social Icons */}
+            <div className="flex items-center gap-4">
                 {mySocials.map((social, idx) => (
-                    <a href={social.href} key={idx}>
-                        <img src={social.icon} className="w-5 h-5" alt={social.name} />
+                    <a
+                        href={social.href}
+                        key={idx}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 transition"
+                    >
+                        <img
+                            src={social.icon}
+                            alt={social.name}
+                            className="w-4 h-4 object-contain transition-transform duration-200 group-hover:scale-110"
+                        />
                     </a>
                 ))}
             </div>
-        </secton>
+        </footer>
     )
 }
 
