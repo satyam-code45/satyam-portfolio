@@ -2,7 +2,7 @@
 
 A sleek, animated, and modern portfolio to showcase my full-stack development skills, tools, and availability for remote opportunities.
 
-![Portfolio Screenshot](./public/portfolio.png)
+![Portfolio Screenshot](portfolio.png)
 
 ## ✨ Features
 
