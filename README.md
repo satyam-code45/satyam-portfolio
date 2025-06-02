@@ -2,26 +2,27 @@
 
 A sleek, animated, and modern portfolio to showcase my full-stack development skills, tools, and availability for remote opportunities.
 
-![Portfolio Screenshot](./assets/preview.png)
+![Portfolio Screenshot](./public/portfolio.png)
 
 ## ✨ Features
 
 - ⚡ Built with **React 19** and **Vite**
 - 🎨 Styled using **Tailwind CSS v4** and **tw-animate-css**
-- 🌎 3D interactive globe using [`cobe`](https://github.com/shuding/cobe)
+- 🌐 Interactive 3D globe using [`magic-ui`](https://github.com/steven-tey/magicui)
 - 📧 Contact form powered by **EmailJS**
-- 🧠 Clean codebase with ESLint and best practices
-- 🔧 Modern stack with `lucide-react`, `clsx`, `tailwind-merge`, `class-variance-authority`
-- 📱 Fully responsive design, dark mode-ready
+- 🧠 Clean, maintainable codebase with ESLint
+- 🔧 Modern utilities: `lucide-react`, `clsx`, `tailwind-merge`, `class-variance-authority`
+- 📱 Fully responsive with dark mode support
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, Tailwind CSS, Vite
-- **Visuals:** cobe, motion, tw-animate-css
-- **Utilities:** clsx, tailwind-merge, class-variance-authority
+- **Framework:** React 19, Vite
+- **Styling:** Tailwind CSS v4, tw-animate-css
+- **Animation/Visuals:** magic-ui, motion
+- **Forms:** EmailJS
 - **Icons:** lucide-react
-- **Email Integration:** EmailJS
-- **Tooling:** ESLint, Vite
+- **Utils:** clsx, tailwind-merge, class-variance-authority
+- **Tooling:** ESLint
 
 ---
 
