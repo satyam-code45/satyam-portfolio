@@ -1,12 +1,46 @@
-# React + Vite
+# 🧑‍💻 Satyam Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, animated, and modern portfolio to showcase my full-stack development skills, tools, and availability for remote opportunities.
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](./assets/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ⚡ Built with **React 19** and **Vite**
+- 🎨 Styled using **Tailwind CSS v4** and **tw-animate-css**
+- 🌎 3D interactive globe using [`cobe`](https://github.com/shuding/cobe)
+- 📧 Contact form powered by **EmailJS**
+- 🧠 Clean codebase with ESLint and best practices
+- 🔧 Modern stack with `lucide-react`, `clsx`, `tailwind-merge`, `class-variance-authority`
+- 📱 Fully responsive design, dark mode-ready
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS, Vite
+- **Visuals:** cobe, motion, tw-animate-css
+- **Utilities:** clsx, tailwind-merge, class-variance-authority
+- **Icons:** lucide-react
+- **Email Integration:** EmailJS
+- **Tooling:** ESLint, Vite
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/satyam-portfolio.git
+cd satyam-portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
