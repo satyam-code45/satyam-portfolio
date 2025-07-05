@@ -11,7 +11,7 @@ export const mySocials = [
   },
   {
     name: "Linkdein",
-    href: "mailto:satyam45.dev@gmail.com",
+    href: "https://www.linkedin.com/in/satyam-code45/",
     icon: "/assets/socials/linkdein.png",
   },
 ];

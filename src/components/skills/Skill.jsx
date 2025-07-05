@@ -15,13 +15,13 @@ const Skill = () => {
           <strong className="text-white">Back-End:</strong> Node.js, Express.js, WebSockets (Socket.io), JWT Authentication.
         </div>
         <div className="rounded-xl border border-white/10 bg-gradient-to-r from-[#0a0a0a] to-transparent p-5 shadow">
-          <strong className="text-white">Databases:</strong> PostgreSQL, MongoDB, Redis, Prisma ORM.
+          <strong className="text-white">Databases:</strong> PostgreSQL, MongoDB, Prisma ORM.
         </div>
         <div className="rounded-xl border border-white/10 bg-gradient-to-r from-[#0a0a0a] to-transparent p-5 shadow">
-          <strong className="text-white">Tools & Testing:</strong> Vercel, Git, GitHub, RabbitMQ, Docker, CI/CD pipeline.
+          <strong className="text-white">Tools & Testing:</strong> Vercel, Git, GitHub, Docker.
         </div>
         <div className="rounded-xl border border-white/10 bg-gradient-to-r from-[#0a0a0a] to-transparent p-5 shadow">
-          <strong className="text-white">Programming Languages:</strong> JavaScript, TypeScript, SQL, C++, Go.
+          <strong className="text-white">Programming Languages:</strong> JavaScript, TypeScript, SQL, C++, Python.
         </div>
         <div className="rounded-xl border border-white/10 bg-gradient-to-r from-[#0a0a0a] to-transparent p-5 shadow">
           <strong className="text-white">Soft Skills:</strong> Debugging, Technical Documentation, Cross-Team Collaboration, Task Prioritization.

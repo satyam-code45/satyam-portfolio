@@ -1,6 +1,55 @@
 export const myProjects = [
   {
     id: 1,
+    title: "Blitz – AI Website Builder",
+    description:
+      "A full-stack AI-powered website generator that goes from chat prompts to live code in seconds.",
+    subDescription: [
+      "Built a real-time AI website builder inspired by Bolt and Lovable, using Next.js 15, Prisma, tRPC, and Clerk.",
+      "Integrated Inngest to handle all background jobs and code generation workflows reliably and asynchronously.",
+      "Generated full project scaffolds dynamically with sandboxed code execution and file management via E2B.",
+      "Implemented prompt-to-code agent system using OpenAI & Gemini with custom tools like terminal, read/write files, etc.",
+      "Designed a project dashboard to access generated builds with syntax-highlighted previews and dark mode support.",
+      "Used Turbopack for blazing-fast local dev and deployed globally on Vercel with zero-config CI/CD.",
+    ],
+    live: "https://blitz-alpha-three.vercel.app/",
+    github: "https://github.com/satyam-code45/blitz",
+    image: "/assets/projects/blitz.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/websitelogos/nextjs1.png" },
+      { id: 2, name: "TypeScript", path: "/assets/websitelogos/typescript.png" },
+      { id: 3, name: "Tailwind", path: "/assets/websitelogos/Tailwind.png" },
+      { id: 4, name: "Prisma", path: "/assets/websitelogos/prisma.png" },
+      { id: 5, name: "Inngest", path: "/assets/websitelogos/inngest.png" },
+      { id: 6, name: "tRPC", path: "/assets/websitelogos/trpc.svg" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Multimart – Gumroad-Inspired Multi-Tenant Platform",
+    description:
+      "A modern digital product marketplace with multi-tenant support, built using Payload CMS and tRPC.",
+    subDescription: [
+      "Developed a Gumroad-style SaaS platform using Payload CMS, tRPC, and Next.js 15 App Router.",
+      "Implemented multi-tenant support with isolated access, branding, and domains using Payload's plugin.",
+      "Integrated Stripe for secure checkout and webhook-driven transaction lifecycle.",
+      "Built a fully type-safe backend with tRPC + Zod and inferred types on the frontend.",
+      "Enabled rich product editor with image uploads (Vercel Blob) and markdown preview.",
+      "Deployed with Bun + Vercel for blazing-fast DX and global scalability.",
+    ],
+    live: "https://multimart-neon.vercel.app/",
+    github: "https://github.com/satyam-code45/multimart",
+    image: "/assets/projects/multimart.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/websitelogos/nextjs1.png" },
+      { id: 2, name: "TypeScript", path: "/assets/websitelogos/typescript.png" },
+      { id: 3, name: "Tailwind", path: "/assets/websitelogos/Tailwind.png" },
+      { id: 4, name: "Payload CMS", path: "/assets/websitelogos/payload.png" },
+      { id: 5, name: "tRPC", path: "/assets/websitelogos/trpc.svg" },
+    ],
+  },
+  {
+    id: 3,
     title: "WorkWave – Job Board Platform",
     description:
       "A scalable job portal with modern authentication, automated workflows, and secure payments.",
@@ -24,7 +73,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "TechTok – Personalized AI Chat with Tech Influencers",
     description:
       "Real-time conversations with AI personas of top tech YouTubers, powered by OpenAI & Gemini.",
@@ -48,8 +97,3 @@ export const myProjects = [
     ],
   },
 ];
-
-
-
-
-
