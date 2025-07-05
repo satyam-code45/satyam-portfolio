@@ -44,7 +44,7 @@ export const myProjects = [
       { id: 1, name: "Next.js", path: "/assets/websitelogos/nextjs1.png" },
       { id: 2, name: "TypeScript", path: "/assets/websitelogos/typescript.png" },
       { id: 3, name: "Tailwind", path: "/assets/websitelogos/Tailwind.png" },
-      { id: 4, name: "Payload CMS", path: "/assets/websitelogos/payload.png" },
+      { id: 4, name: "Payload CMS", path: "/assets/websitelogos/payload.svg" },
       { id: 5, name: "tRPC", path: "/assets/websitelogos/trpc.svg" },
     ],
   },

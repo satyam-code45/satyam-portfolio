@@ -17,7 +17,7 @@ const TopCard = () => {
             {/* Download CV and Social Icons */}
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                 <a
-                    href="/assets/Resume-4.pdf"
+                    href="/assets/Resume.pdf"
                     download="satyam_resume.pdf"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-royal to-lavender text-white font-light shadow-md hover:from-fuchsia hover:to-orange hover:shadow-lg active:scale-95 transition-all duration-300"
                 >

@@ -20,7 +20,7 @@ export const mySkills = [
   { name: "Tailwind", img: "/assets/websitelogos/Tailwind.png" },
   { name: "Typescript", img: "/assets/websitelogos/typescript.png" },
   { name: "Vercel", img: "/assets/websitelogos/Vercel.png" },
-  { name: "Payload CMS", img: "/assets/websitelogos/payload.png" },
+  // { name: "Payload CMS", img: "/assets/websitelogos/payload.png" },
   { name: "tRPC", img: "/assets/websitelogos/trpc.svg" },
   { name: "Inngest", img: "/assets/websitelogos/inngest.png" },
   { name: "Python", img: "/assets/websitelogos/python.png" },
