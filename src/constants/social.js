@@ -14,4 +14,9 @@ export const mySocials = [
     href: "https://www.linkedin.com/in/satyam-code45/",
     icon: "/assets/socials/linkdein.png",
   },
+  {
+    name: "GitHub",
+    href: "https://github.com/satyam-code45",
+    icon: "/assets/websitelogos/github.png",
+  },
 ];
