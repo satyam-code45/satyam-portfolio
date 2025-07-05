@@ -1,0 +1,17 @@
+export const mySocials = [
+  {
+    name: "Email",
+    href: "mailto:satyam45.dev@gmail.com",
+    icon: "/assets/socials/gmail2.png",
+  },
+  {
+    name: "X",
+    href: "https://x.com/satyam45dev",
+    icon: "/assets/socials/x.png",
+  },
+  {
+    name: "Linkdein",
+    href: "mailto:satyam45.dev@gmail.com",
+    icon: "/assets/socials/linkdein.png",
+  },
+];

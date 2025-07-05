@@ -1,5 +1,5 @@
 import { Marquee } from "@/components/magicui/marquee";
-import { mySkills } from "@/constants";
+import { mySkills } from "@/constants/skills";
 import { twMerge } from "tailwind-merge";
 
 

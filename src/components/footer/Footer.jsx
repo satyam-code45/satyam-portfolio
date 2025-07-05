@@ -1,4 +1,4 @@
-import { mySocials } from "@/constants"
+import { mySocials } from "@/constants/social"
 
 const Footer = () => {
     return (

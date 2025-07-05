@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { Marquee } from "../magicui/marquee";
-import { mySkills } from "@/constants";
+import { mySkills } from "@/constants/skills";
 
 
 const firstRow = mySkills.slice(0, mySkills.length / 2);

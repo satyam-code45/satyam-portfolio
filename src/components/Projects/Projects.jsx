@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { myProjects } from "../../constants"
+import { myProjects } from "../../constants/project"
 import Project from "./Project"
 import {motion, useMotionValue, useSpring } from "motion/react"
 

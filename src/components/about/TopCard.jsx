@@ -1,4 +1,4 @@
-import { mySocials } from '@/constants'
+import { mySocials } from '@/constants/social'
 import { Download } from 'lucide-react'
 import React from 'react'
 

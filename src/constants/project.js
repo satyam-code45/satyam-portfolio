@@ -50,45 +50,6 @@ export const myProjects = [
 ];
 
 
-export const mySocials = [
-  {
-    name: "Email",
-    href: "mailto:satyam45.dev@gmail.com",
-    icon: "/assets/socials/gmail2.png",
-  },
-  {
-    name: "X",
-    href: "https://x.com/satyam45dev",
-    icon: "/assets/socials/x.png",
-  },
-  {
-    name: "Linkdein",
-    href: "mailto:satyam45.dev@gmail.com",
-    icon: "/assets/socials/linkdein.png",
-  },
-];
 
-export const mySkills = [
-  { name: "Aws", img: "/assets/websitelogos/AWS.png" },
-  { name: "Convex", img: "/assets/websitelogos/convex.png" },
-  { name: "Css3", img: "/assets/websitelogos/CSS3.png" },
-  { name: "Docker", img: "/assets/websitelogos/Docker.png" },
-  { name: "Expressjs", img: "/assets/websitelogos/expressjs.png" },
-  { name: "Git", img: "/assets/websitelogos/Git.png" },
-  { name: "Github", img: "/assets/websitelogos/github.png" },
-  { name: "Html5", img: "/assets/websitelogos/HTML5.png" },
-  { name: "Js", img: "/assets/websitelogos/js.png" },
-  { name: "Mongodb", img: "/assets/websitelogos/MongoDB.png" },
-  { name: "Next.js", img: "/assets/websitelogos/nextjs1.png" },
-  { name: "Node.js", img: "/assets/websitelogos/Node.js.png" },
-  { name: "Postgresql", img: "/assets/websitelogos/postgres.png" },
-  { name: "Prisma", img: "/assets/websitelogos/prisma.png" },
-  { name: "React", img: "/assets/websitelogos/react.png" },
-  { name: "Redis", img: "/assets/websitelogos/Redis.png" },
-  { name: "Shadcn", img: "/assets/websitelogos/shadcn.png" },
-  { name: "Socketio", img: "/assets/websitelogos/socketio.png" },
-  { name: "Tailwind", img: "/assets/websitelogos/Tailwind.png" },
-  { name: "Typescript", img: "/assets/websitelogos/typescript.png" },
-  { name: "Vercel", img: "/assets/websitelogos/Vercel.png" }
-];
+
 
