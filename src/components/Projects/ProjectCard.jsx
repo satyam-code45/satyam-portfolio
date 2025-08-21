@@ -1,4 +1,3 @@
-import {motion } from "motion/react"
 
 const ProjectCard = ({ title, description, subDescription, live, github, image, tags, closeCard }) => {
   return (
