@@ -12,11 +12,11 @@ const About = () => {
             <TopCard />
             <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12'>
                 {/* Grid-1 */}
-                <div className='flex items-end grid-default-color grid-1'>
-                    <Tech />
-                    <div className='z-10'>
+                <div className='flex items-end grid-default-color grid-1 relative'>
+                    <div className='hidden sm:block'><Tech /></div>
+                    <div className='z-10 w-full'>
                         <p className='headtext font-extrabold'>Hi, I'm Satyam</p>
-                        <p className='font-bold sm:font-normal bg-primary/20 sm:bg-none text-neutral-400 text-sm md:text-base text-pretty'>
+                        <p className='font-bold sm:font-normal bg-primary/20 sm:bg-none text-neutral-400 text-sm md:text-base text-pretty p-2 sm:p-0'>
                             Full-Stack Developer 👨‍💻 crafting code with care — exploring DevOps ⚙️, Web3 🔗, and Generative AI 🤖. Always building, always evolving.
                         </p>
                     </div>

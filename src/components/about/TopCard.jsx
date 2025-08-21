@@ -19,25 +19,25 @@ const TopCard = () => {
                 <a
                     href="/assets/Resume.pdf"
                     download="satyam_resume.pdf"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-royal to-lavender text-white font-light shadow-md hover:from-fuchsia hover:to-orange hover:shadow-lg active:scale-95 transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base rounded-full bg-gradient-to-r from-royal to-lavender text-white font-light shadow-md hover:from-fuchsia hover:to-orange hover:shadow-lg active:scale-95 transition-all duration-300 w-full sm:w-auto justify-center"
                 >
                     Download CV
-                    <Download className="w-5 h-5" />
+                    <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
                     {mySocials.map((social, idx) => (
                         <a
                             key={idx}
                             href={social.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group inline-flex items-center justify-center w-11 h-11 rounded-full  hover:bg-white/20 transition"
+                            className="group inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 rounded-full hover:bg-white/20 transition"
                         >
                             <img
                                 src={social.icon}
                                 alt={social.name}
-                                className="w-6 h-6 object-contain transition-transform duration-200 group-hover:scale-110"
+                                className="w-5 h-5 sm:w-6 sm:h-6 object-contain transition-transform duration-200 group-hover:scale-110"
                             />
                         </a>
                     ))}

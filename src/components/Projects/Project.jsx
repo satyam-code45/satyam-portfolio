@@ -9,21 +9,23 @@ const Project = ({title, description, subDescription, live, github, image, tags,
     return (
         <>
             <div 
-                className='flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0'
+                className='flex flex-col sm:flex-row items-start sm:items-center py-6 sm:py-10 justify-between gap-4 sm:gap-0'
                 onMouseEnter={()=>setPreview(image)}
                 onMouseLeave={()=>setPreview(null)}
             >
-                <div>
-                    <p className='text-2xl'>{title}</p>
-                    <div className='flex gap-5 mt-2 text-sand'>
+                <div className="w-full sm:w-auto">
+                    <p className='text-xl sm:text-2xl'>{title}</p>
+                    <div className='flex flex-wrap gap-3 sm:gap-5 mt-2 text-sand text-sm sm:text-base'>
                         {tags.map((tag) => (
-                            <span>{tag.name}</span>
+                            <span key={tag.name}>{tag.name}</span>
                         ))}
                     </div>
                 </div>
-                <InteractiveHoverButton onClick={()=>setIsHidden(true)}>
-                    Read More
-                </InteractiveHoverButton>
+                <div className="w-full sm:w-auto">
+                    <InteractiveHoverButton onClick={()=>setIsHidden(true)} className="w-full sm:w-auto">
+                        Read More
+                    </InteractiveHoverButton>
+                </div>
             </div>
             <div className="bg-gradient-to-r from-transparent via-neutral-700 h-[1px] w-full" />
 
