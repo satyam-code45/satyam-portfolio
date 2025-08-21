@@ -13,14 +13,13 @@ const ReviewCard = ({
     return (
         <figure
             className={twMerge(
-                "relative w-fit cursor-pointer overflow-hidden rounded-xl border border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation",
-                "p-2 sm:p-4 mx-2"
+                "relative h-full w-fit cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation"
             )}
         >
             <div className="flex flex-row items-center gap-2">
-                <img className="rounded-full w-6 h-6 sm:w-8 sm:h-8" alt="" src={img} />
+                <img className="rounded-full" width="32" height="32" alt="" src={img} />
                 <div className="flex flex-col">
-                    <figcaption className="text-base sm:text-2xl whitespace-nowrap">
+                    <figcaption className="text-2xl">
                         {name}
                     </figcaption>
                 </div>
@@ -31,30 +30,25 @@ const ReviewCard = ({
 
 export function MarqueeDemo() {
     return (
-        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden px-4 sm:px-0">
-            <div className="w-full overflow-hidden">
-                <Marquee pauseOnHover className="[--duration:30s] sm:[--duration:20s]">
-                    {firstRow.map((review) => (
-                        <ReviewCard key={review.name} {...review} />
-                    ))}
-                </Marquee>
-            </div>
-            <div className="w-full overflow-hidden mt-4">
-                <Marquee reverse pauseOnHover className="[--duration:30s] sm:[--duration:20s]">
-                    {secondRow.map((review) => (
-                        <ReviewCard key={review.name} {...review} />
-                    ))}
-                </Marquee>
-            </div>
+        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+            <Marquee pauseOnHover className="[--duration:20s]">
+                {firstRow.map((review) => (
+                    <ReviewCard key={review.username} {...review} />
+                ))}
+            </Marquee>
+            <Marquee reverse pauseOnHover className="[--duration:20s]">
+                {secondRow.map((review) => (
+                    <ReviewCard key={review.username} {...review} />
+                ))}
+            </Marquee>
             {/* Left fade - only on medium and up */}
             <div className="pointer-events-none absolute inset-y-0 left-0 hidden md:block w-[40%] bg-gradient-to-r from-[#0a0a0a] to-transparent z-10"></div>
 
             {/* Right fade - only on medium and up */}
             <div className="pointer-events-none absolute inset-y-0 right-0 hidden md:block w-[40%] bg-gradient-to-l from-[#0a0a0a] to-transparent z-10"></div>
 
-            {/* Mobile fades */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 md:hidden w-[20%] bg-gradient-to-r from-[#0a0a0a] to-transparent z-10"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 md:hidden w-[20%] bg-gradient-to-l from-[#0a0a0a] to-transparent z-10"></div>
+
+
         </div>
     );
 }

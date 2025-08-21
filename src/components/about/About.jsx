@@ -24,24 +24,22 @@ const About = () => {
                 </div>
                 {/* Grid-2 */}
                 <div className='grid-default-color grid-2'>
-                    <div ref={grid2ref} className='flex items-center justify-center w-full h-full relative'>
-                        <p className='flex items-end text-2xl sm:text-5xl text-gray-500'>
+                    <div ref={grid2ref} className='flex items-center justify-center w-full h-full'>
+                        <p className='flex items-end text-5xl text-gray-500'>
                             Code. Debug. Repeat.
                         </p>
-                        {/* Text cards with adjusted positions for mobile */}
-                        <Card style={{ rotate: "75deg", top: "20%", left: "15%", scale: "0.8" }} text={"Test"} containerRef={grid2ref} />
-                        <Card style={{ rotate: "30deg", top: "50%", left: "40%", scale: "0.8" }} text={"Hello"} containerRef={grid2ref} />
-                        <Card style={{ rotate: "-75deg", top: "45%", left: "5%", scale: "0.8" }} text={"Hii"} containerRef={grid2ref} />
-                        <Card style={{ rotate: "70deg", top: "60%", left: "60%", scale: "0.8" }} text={"Design"} containerRef={grid2ref} />
-                        <Card style={{ rotate: "7deg", top: "15%", left: "45%", scale: "0.8" }} text={"Dev"} containerRef={grid2ref} />
-                        
-                        {/* Tech logos with adjusted positions for mobile */}
-                        <Card style={{ rotate: "30deg", top: "65%", left: "75%", scale: "0.9" }} image="/assets/websitelogos/react.png" containerRef={grid2ref} />
-                        <Card style={{ rotate: "-45deg", top: "75%", left: "25%", scale: "0.9" }} image="/assets/websitelogos/nextjs1.png" containerRef={grid2ref} />
-                        <Card style={{ rotate: "-45deg", top: "10%", left: "10%", scale: "0.9" }} image="/assets/websitelogos/Node.js.png" containerRef={grid2ref} />
-                        <Card style={{ rotate: "40deg", top: "5%", left: "35%", scale: "0.9" }} image="/assets/websitelogos/typescript.png" containerRef={grid2ref} />
-                        <Card style={{ rotate: "-5deg", top: "40%", left: "30%", scale: "0.9" }} image="/assets/websitelogos/MongoDB.png" containerRef={grid2ref} />
-                        <Card style={{ rotate: "85deg", top: "25%", left: "70%", scale: "0.9" }} image="/assets/websitelogos/Docker.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "75deg", top: "30%", left: "20%" }} text={"Test"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "30deg", top: "60%", left: "45%" }} text={"Hello"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "-75deg", top: "60%", left: "0%" }} text={"Hii"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "70deg", bottom: "30%", left: "70%" }} text={"Design"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "7deg", top: "10%", left: "50%" }} text={"Lol"} containerRef={grid2ref} />
+                        <Card style={{ rotate: "30deg", top: "70%", left: "70%" }} image="/assets/websitelogos/react.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "-45deg", top: "70%", left: "25%" }} image="/assets/websitelogos/nextjs1.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "-45deg", top: "5%", left: "10%" }} image="/assets/websitelogos/Node.js.png" containerRef={grid2ref} />
+
+                        <Card style={{ rotate: "40deg", top: "10%", left: "40%" }} image="/assets/websitelogos/typescript.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "-5deg", top: "50%", left: "35%" }} image="/assets/websitelogos/MongoDB.png" containerRef={grid2ref} />
+                        <Card style={{ rotate: "85deg", top: "15%", left: "80%" }} image="/assets/websitelogos/Docker.png" containerRef={grid2ref} />
                     </div>
                 </div>
                 {/* Grid-3 */}

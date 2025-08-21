@@ -10,8 +10,8 @@ const Project = ({title, description, subDescription, live, github, image, tags,
         <>
             <div 
                 className='flex flex-col sm:flex-row items-start sm:items-center py-6 sm:py-10 justify-between gap-4 sm:gap-0'
-                onMouseEnter={() => window.innerWidth >= 640 && setPreview(image)}
-                onMouseLeave={() => window.innerWidth >= 640 && setPreview(null)}
+                onMouseEnter={()=>setPreview(image)}
+                onMouseLeave={()=>setPreview(null)}
             >
                 <div className="w-full sm:w-auto">
                     <p className='text-xl sm:text-2xl'>{title}</p>

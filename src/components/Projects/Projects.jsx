@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { myProjects } from "../../constants/project"
 import Project from "./Project"
-import { useMotionValue, useSpring } from "motion/react"
+import {motion, useMotionValue, useSpring } from "motion/react"
 
 const Projects = () => {
 
@@ -26,15 +26,11 @@ const Projects = () => {
                     setPreview={setPreview}
                 />
             ))}
-            {preview && (
-                <div className="hidden sm:block">
-                    <motion.img
-                        className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg shadow-lg pointer-events-none w-80"
-                        src={preview}
-                        style={{ x: springX, y: springY }}
-                    />
-                </div>
-            )}
+            {preview && (<motion.img
+                className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg shadow-lg pointer-events-none w-80"
+                src={preview}
+                style={{ x: springX, y: springY }}
+            />)}
         </section>
     )
 }
